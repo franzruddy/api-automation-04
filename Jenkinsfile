@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage("test"){
             steps{
-                bat 'echo Testing ====='
+                bat 'echo Testing ======'
             }
         }
     }
