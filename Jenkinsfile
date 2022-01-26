@@ -3,12 +3,13 @@ pipeline {
  stages {
     stage("build") {
          steps {
-             bat 'build -----'
+            bat 'docker build -t automation:1.0.0 .'
+            
          }
     }
      stage("test") {
          steps {
-             bat 'test ------'
+             bat 'docker-compose run automation'
          }
      }
  }
